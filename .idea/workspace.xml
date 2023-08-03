@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e4e511-3e5c-4848-b82d-8f4c2930ef8d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExceptionHandelingPractice/CustomException/CustomExceptionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExceptionHandelingPractice/CustomException/FileNameBusinessImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ExceptionHandelingPractice/CustomException/InvalidFileNameCustom.java" afterDir="false" />
-    </list>
+    <list default="true" id="f8e4e511-3e5c-4848-b82d-8f4c2930ef8d" name="Changes" comment="CustomException" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +65,14 @@
       <option name="presentableId" value="Default" />
       <updated>1690994069498</updated>
     </task>
+    <task id="LOCAL-00001" summary="CustomException">
+      <created>1690995260904</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690995260904</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,5 +85,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="CustomException" />
+    <option name="LAST_COMMIT_MESSAGE" value="CustomException" />
   </component>
 </project>
