@@ -1,5 +1,6 @@
 package CategoryProblem;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.Optional;
 
 public class CategoryImplimintation {
 
-    HashMap<String,Integer> depthTracker = new HashMap<>();
+    List <CategoryReturnValue> depthTracker = new ArrayList<>();
     List<String> returnlistvalue =  new ArrayList<>();
     HashMap<Category,String> CategoryHashmap = new HashMap<>();
 
@@ -24,10 +25,18 @@ public class CategoryImplimintation {
     {
         for(Entry<Category,String> checkval :  CategoryHashmap.entrySet())
         {
-            if(checkval.getValue().equals(parent.getParentName()))
+           // System.out.println("checkval.getValue() " +checkval.getValue());
+            if(checkval.getValue()!=null)
             {
-                return  Optional.of(checkval.getKey());
+                System.out.println("checkval.getValue() " +checkval.getValue());
+                System.out.println("parent.getParentName()" +parent.getName());
+                if(checkval.getValue().equals(parent.getName()))
+                {
+                    System.out.println("return this");
+                    return  Optional.of(checkval.getKey());
+                }
             }
+
 
         }
         return Optional.empty();
@@ -41,34 +50,44 @@ public class CategoryImplimintation {
 
     public void childDerviation(Category ParentCategory)
     {
-
+        System.out.println("ParentCategory "+ParentCategory.getName());
         Integer depth = 0 ;
-        depthTracker.put(ParentCategory.getName(),depth);
+        //depthTracker.put(ParentCategory.getName(),depth);
         boolean childNotFound = false;
         Category currentparent = ParentCategory;
 
-        while (depth==-1 && childNotFound)
+        while (depth!=-1 && !childNotFound)
 
         {
+            System.out.println("depth "+depth);
+            System.out.println("childNotFound "+childNotFound);
             Optional<Category> childelement = findChild(ParentCategory);
 
            if( childelement.isPresent())
             {
+                System.out.println("\"-\".repeat(depth)+currentparent.getName() "+"-".repeat(depth)+currentparent.getName());
                 depth++;
                 currentparent = childelement.get();
-                depthTracker.put("-".repeat(depth)+currentparent.getName(),depth);
+                depthTracker.add( new CategoryReturnValue(currentparent.getName(), "-".repeat(depth)+currentparent.getName(),depth));
+                returnlistvalue.add("-".repeat(depth)+currentparent.getName());
                 RemoveElement(currentparent);
                 childNotFound = false;
 
             } else
             {
-                depth--;
-                if (depth==-1)
+
+                if (depth==0)
                 {
                     childNotFound = true;
-                    return;
+                    break;
                 }else
                 {
+                    while (depthTracker.get(depthTracker.size()-1).getDepth()==depth+1)
+                    {
+                        depthTracker.remove(depthTracker.size()-1);
+                    }
+
+                    depth =  depth+1;
 
                 }
 
@@ -78,22 +97,36 @@ public class CategoryImplimintation {
 
     }
 
-    public void childDerviationParent(Category ParentCategory)
+    public void childDerviationParent()
     {
+        System.out.println("Inside childDerviationParent");
         List<Category> root = findRootElement();
 
         for (Category category : root)
         {
+            System.out.println("category "+category.getName());
             childDerviation(category);
         }
     }
 
     public List<String> retunrvaluesback()
     {
+        System.out.println("Inside retunrvaluesback");
+        populatevalue();
+        childDerviationParent();
+
         return returnlistvalue;
     }
 
-
+public void populatevalue()
+{
+    System.out.println("Inside populatevalue");
+    CategoryDummyData categoryDummyData = new CategoryDummyData();
+    for(int idx =0; idx< categoryDummyData.generateData().size() ; idx++)
+    {
+        CategoryHashmap.put(categoryDummyData.generateData().get(idx), categoryDummyData.generateData().get(idx).getParentName());
+    }
+}
 
 
 }

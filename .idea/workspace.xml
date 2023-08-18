@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e4e511-3e5c-4848-b82d-8f4c2930ef8d" name="Changes" comment="CustomException">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryDummyData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryImplimintation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryReturnValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryUtil.java" afterDir="false" />
+    <list default="true" id="f8e4e511-3e5c-4848-b82d-8f4c2930ef8d" name="Changes" comment="Categorize a input list in hierarchical order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryImplimintation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryImplimintation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryReturnValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryReturnValue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +45,26 @@
     "settings.editor.selected.configurable": "copyright"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.CarImpli">
+  <component name="RunManager" selected="Application.CategoryUtil">
     <configuration name="CarImpli" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExceptionHandelingPractice.Inheritance.CarImpli" />
       <module name="JavaConceptsPractice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ExceptionHandelingPractice.Inheritance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CategoryProblem.CategoryUtil" />
+      <module name="JavaConceptsPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CategoryProblem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CategoryUtil" />
         <item itemvalue="Application.CarImpli" />
         <item itemvalue="Application.CustomExceptionUtil" />
       </list>
@@ -112,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691248203099</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Categorize a input list in hierarchical order">
+      <created>1692382823482</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692382823482</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +146,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CustomException" />
-    <option name="LAST_COMMIT_MESSAGE" value="CustomException" />
+    <MESSAGE value="Categorize a input list in hierarchical order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Categorize a input list in hierarchical order" />
   </component>
 </project>
