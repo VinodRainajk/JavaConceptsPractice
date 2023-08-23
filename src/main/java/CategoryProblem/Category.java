@@ -28,6 +28,14 @@ public class Category {
     }
 
     @Override
+    public String toString() {
+        return "Category{" +
+                "Name='" + Name + '\'' +
+                ", ParentName='" + ParentName + '\'' +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object obj) {
         Category input = (Category)obj;
         return Name.equals(input.getName());

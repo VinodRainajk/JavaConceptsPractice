@@ -1,18 +1,14 @@
 package CategoryProblem;
 
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Optional;
 
 public class CategoryImplimintation {
-
-    List <CategoryReturnValue> depthTracker = new ArrayList<>();
     List<String> returnlistvalue =  new ArrayList<>();
     HashMap<Category,String> CategoryHashmap = new HashMap<>();
-
+    Set<String> elementadded = new HashSet<>();
+    HashMap<String,Category> AllCategory = new HashMap<>();
     public List<Category> findRootElement()
     {
         List<Category> returnList = new ArrayList<>();
@@ -61,35 +57,50 @@ public class CategoryImplimintation {
         {
             System.out.println("depth "+depth);
             System.out.println("childNotFound "+childNotFound);
-            Optional<Category> childelement = findChild(ParentCategory);
+            System.out.println("CurrentCategory "+currentparent);
+            Optional<Category> childelement = findChild(currentparent);
 
            if( childelement.isPresent())
             {
                 System.out.println("\"-\".repeat(depth)+currentparent.getName() "+"-".repeat(depth)+currentparent.getName());
+             if (!elementadded.contains(currentparent.getName()))
+             {
+                 returnlistvalue.add("-".repeat(depth)+currentparent.getName());
+                 elementadded.add(currentparent.getName());
+             }
+
                 depth++;
                 currentparent = childelement.get();
-                depthTracker.add( new CategoryReturnValue(currentparent.getName(), "-".repeat(depth)+currentparent.getName(),depth));
-                returnlistvalue.add("-".repeat(depth)+currentparent.getName());
-                RemoveElement(currentparent);
+                System.out.println("Hash map is "+ CategoryHashmap);
                 childNotFound = false;
+
 
             } else
             {
 
-                if (depth==0)
+                if (depth==-1)
                 {
                     childNotFound = true;
                     break;
                 }else
                 {
-                    while (depthTracker.get(depthTracker.size()-1).getDepth()==depth+1)
-                    {
-                        depthTracker.remove(depthTracker.size()-1);
-                    }
-
-                    depth =  depth+1;
+                    System.out.println("Last child ");
+                    System.out.println("currentparent.getName() " +currentparent.getName());
+                    System.out.println("ParentCategory.getName() " +ParentCategory.getName() );
+                   if(!elementadded.contains(currentparent.getName()))
+                   {
+                       System.out.println("This is already printed ");
+                       returnlistvalue.add("-".repeat(depth)+currentparent.getName());
+                       elementadded.add(currentparent.getName());
+                       System.out.println("\"-\".repeat(depth)+currentparent.getName() "+"-".repeat(depth)+currentparent.getName());
+                   }
+                    RemoveElement(currentparent);
+                    currentparent = AllCategory.get(currentparent.getParentName());
+                    depth--;
 
                 }
+
+
 
             }
 
@@ -124,7 +135,12 @@ public void populatevalue()
     CategoryDummyData categoryDummyData = new CategoryDummyData();
     for(int idx =0; idx< categoryDummyData.generateData().size() ; idx++)
     {
-        CategoryHashmap.put(categoryDummyData.generateData().get(idx), categoryDummyData.generateData().get(idx).getParentName());
+        AllCategory.put(categoryDummyData.generateData().get(idx).getName(), categoryDummyData.generateData().get(idx));
+        if(categoryDummyData.generateData().get(idx).getParentName()!= null)
+        {
+            CategoryHashmap.put(categoryDummyData.generateData().get(idx), categoryDummyData.generateData().get(idx).getParentName());
+        }
+
     }
 }
 
