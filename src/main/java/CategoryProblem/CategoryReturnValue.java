@@ -41,4 +41,8 @@ public class CategoryReturnValue {
         this.name = name;
         this.display = display;
     }
+
+    public static interface AnonymousInterface {
+        public void view();
+    }
 }

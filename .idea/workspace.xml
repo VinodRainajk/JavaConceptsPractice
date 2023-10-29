@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e4e511-3e5c-4848-b82d-8f4c2930ef8d" name="Changes" comment="Categorize a input list in hierarchical order">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/AnonymousClassImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/AnonymousInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/Bus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/Java8Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/TestDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/TestJavaArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/java8InterfaceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryProblem/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryImplimintation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryImplimintation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryReturnValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CategoryReturnValue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,25 +42,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Learning/JavaPractice/JavaConceptsPractice&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "F:/Learning/JavaPractice/JavaConceptsPractice",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "copyright"
   }
-}</component>
-  <component name="RunManager" selected="Application.CategoryUtil">
-    <configuration name="CarImpli" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExceptionHandelingPractice.Inheritance.CarImpli" />
+}]]></component>
+  <component name="RunManager" selected="Application.TestDemo">
+    <configuration name="AnonymousClassImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CategoryProblem.AnonymousClassImpl" />
       <module name="JavaConceptsPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ExceptionHandelingPractice.Inheritance.*" />
+          <option name="PATTERN" value="CategoryProblem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +81,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomExceptionUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ExceptionHandelingPractice.CustomException.CustomExceptionUtil" />
+    <configuration name="TestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CategoryProblem.TestDemo" />
       <module name="JavaConceptsPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ExceptionHandelingPractice.CustomException.*" />
+          <option name="PATTERN" value="CategoryProblem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJavaArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CategoryProblem.TestJavaArray" />
+      <module name="JavaConceptsPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CategoryProblem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java8InterfaceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CategoryProblem.java8InterfaceImpl" />
+      <module name="JavaConceptsPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CategoryProblem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,9 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestDemo" />
+        <item itemvalue="Application.TestJavaArray" />
+        <item itemvalue="Application.java8InterfaceImpl" />
+        <item itemvalue="Application.AnonymousClassImpl" />
         <item itemvalue="Application.CategoryUtil" />
-        <item itemvalue="Application.CarImpli" />
-        <item itemvalue="Application.CustomExceptionUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692385823790</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Categorize a input list in hierarchical order">
+      <created>1692809125253</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692809125254</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
