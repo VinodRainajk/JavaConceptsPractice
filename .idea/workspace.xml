@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e4e511-3e5c-4848-b82d-8f4c2930ef8d" name="Changes" comment="Thread Example">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MutiThreadingProblems/ThreadIntuppt.java" afterDir="false" />
+    <list default="true" id="f8e4e511-3e5c-4848-b82d-8f4c2930ef8d" name="Changes" comment="Demon Thread">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Java8Streams/FlatMapExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ThreadIntuppt">
+  <component name="RunManager" selected="Application.FlatMapExample">
+    <configuration name="FlatMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java8Streams.FlatMapExample" />
+      <module name="JavaConceptsPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java8Streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MultiThreading" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CategoryProblem.MultiThreading" />
       <module name="JavaConceptsPractice" />
@@ -62,19 +75,6 @@
     </configuration>
     <configuration name="TestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CategoryProblem.TestDemo" />
-      <module name="JavaConceptsPractice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CategoryProblem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestJavaArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CategoryProblem.TestJavaArray" />
       <module name="JavaConceptsPractice" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FlatMapExample" />
         <item itemvalue="Application.ThreadIntuppt" />
         <item itemvalue="Application.ThreadCreation" />
         <item itemvalue="Application.MultiThreading" />
         <item itemvalue="Application.TestDemo" />
-        <item itemvalue="Application.TestJavaArray" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698561188972</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Demon Thread">
+      <created>1698651628445</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698651628445</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +214,7 @@
     <MESSAGE value="Jaba Practice and concepts for COmparisin" />
     <MESSAGE value="Java Practice and concepts for COmparisin" />
     <MESSAGE value="Thread Example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thread Example" />
+    <MESSAGE value="Demon Thread" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demon Thread" />
   </component>
 </project>
