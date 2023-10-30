@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8e4e511-3e5c-4848-b82d-8f4c2930ef8d" name="Changes" comment="Java Practice and concepts for COmparisin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CUstomStudentCOmparable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/CustomStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/MultiThreading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MutiThreadingProblems/ThreadCreation.java" afterDir="false" />
+    <list default="true" id="f8e4e511-3e5c-4848-b82d-8f4c2930ef8d" name="Changes" comment="Thread Example">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MutiThreadingProblems/ThreadIntuppt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryProblem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CategoryProblem/StudentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CategoryProblem/StudentImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +46,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ThreadCreation">
+  <component name="RunManager" selected="Application.ThreadIntuppt">
     <configuration name="MultiThreading" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CategoryProblem.MultiThreading" />
       <module name="JavaConceptsPractice" />
@@ -104,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="java8InterfaceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CategoryProblem.java8InterfaceImpl" />
+    <configuration name="ThreadIntuppt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MutiThreadingProblems.ThreadIntuppt" />
       <module name="JavaConceptsPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CategoryProblem.*" />
+          <option name="PATTERN" value="MutiThreadingProblems.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadIntuppt" />
         <item itemvalue="Application.ThreadCreation" />
         <item itemvalue="Application.MultiThreading" />
         <item itemvalue="Application.TestDemo" />
         <item itemvalue="Application.TestJavaArray" />
-        <item itemvalue="Application.java8InterfaceImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698555542775</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Thread Example">
+      <created>1698561188972</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698561188972</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +206,7 @@
     <MESSAGE value="Categorize a input list in hierarchical order" />
     <MESSAGE value="Jaba Practice and concepts for COmparisin" />
     <MESSAGE value="Java Practice and concepts for COmparisin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Java Practice and concepts for COmparisin" />
+    <MESSAGE value="Thread Example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thread Example" />
   </component>
 </project>
